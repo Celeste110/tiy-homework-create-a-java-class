@@ -4,7 +4,6 @@
  * between two popular phones.
  */
 import java.util.Scanner;
-import java.math.*;
 public class PhoneRepairParts {
 
     public static void main(String[] args)
@@ -54,5 +53,12 @@ public class PhoneRepairParts {
 
         System.out.println("\n*********************************************************");
         System.out.println("Price difference between both phones: $" + PhonePartsCatalogPricing.priceDifference(firstUserSelection.calculateTotal(), secondUserSelection.calculateTotal()).abs());
+
+        System.out.println("\n*********************************************************");
+        System.out.println("\nAlert! New reduced price changes for your phone are in effect: ");
+        System.out.println("--> New reduced price for digitizer assembly: $"+firstUserSelection.setdigitizerAssemblyPrice());
+        System.out.println("--> New reduced price for lcd: $"+firstUserSelection.setlcdPrice());
+
+
     }
 }
